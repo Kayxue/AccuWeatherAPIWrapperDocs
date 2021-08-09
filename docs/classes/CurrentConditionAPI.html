@@ -1,0 +1,470 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CurrentConditionAPI | accu-weather-api-wrapper</title>
+	<meta name="description" content="Documentation for accu-weather-api-wrapper">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">accu-weather-api-wrapper</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">accu-weather-api-wrapper</a>
+				</li>
+				<li>
+					<a href="CurrentConditionAPI.html">CurrentConditionAPI</a>
+				</li>
+			</ul>
+			<h1>Class CurrentConditionAPI</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Current condition API Playground:
+						<a href="https://developer.accuweather.com/accuweather-current-conditions-api/apis" class="external">https://developer.accuweather.com/accuweather-current-conditions-api/apis</a></p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="APIClientBase.html" class="tsd-signature-type" data-tsd-kind="Class">APIClientBase</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">CurrentConditionAPI</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="CurrentConditionAPI.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="CurrentConditionAPI.html#apikey" class="tsd-kind-icon">apikey</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="CurrentConditionAPI.html#axiosInstance" class="tsd-kind-icon">axios<wbr>Instance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="CurrentConditionAPI.html#detail" class="tsd-kind-icon">detail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="CurrentConditionAPI.html#language" class="tsd-kind-icon">language</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CurrentConditionAPI.html#HistoricalCurrentConditions" class="tsd-kind-icon">Historical<wbr>Current<wbr>Conditions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CurrentConditionAPI.html#currentCondition" class="tsd-kind-icon">current<wbr>Condition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="CurrentConditionAPI.html#handleError" class="tsd-kind-icon">handle<wbr>Error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CurrentConditionAPI.html#topCitiesCurrentCondition" class="tsd-kind-icon">top<wbr>Cities<wbr>Current<wbr>Condition</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Current<wbr>ConditionAPI<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IInitOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitOptions</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;metric&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;offset&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="CurrentConditionAPI.html" class="tsd-signature-type" data-tsd-kind="Class">CurrentConditionAPI</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="APIClientBase.html">APIClientBase</a>.<a href="APIClientBase.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in TypeScript/API/CurrentConditionAPIClient.ts:23</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize the client</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IInitOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitOptions</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;metric&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;offset&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Init options</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="CurrentConditionAPI.html" class="tsd-signature-type" data-tsd-kind="Class">CurrentConditionAPI</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="apikey" class="tsd-anchor"></a>
+					<h3>apikey</h3>
+					<div class="tsd-signature tsd-kind-icon">apikey<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="APIClientBase.html">APIClientBase</a>.<a href="APIClientBase.html#apikey">apikey</a></p>
+						<ul>
+							<li>Defined in TypeScript/API/APIClientBase.ts:9</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Accu Weather API key.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="axiosInstance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> axios<wbr>Instance</h3>
+					<div class="tsd-signature tsd-kind-icon">axios<wbr>Instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AxiosInstance</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in TypeScript/API/CurrentConditionAPIClient.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p> The instance that send requests to API</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="detail" class="tsd-anchor"></a>
+					<h3>detail</h3>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="APIClientBase.html">APIClientBase</a>.<a href="APIClientBase.html#detail">detail</a></p>
+						<ul>
+							<li>Defined in TypeScript/API/APIClientBase.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether return full object when searching</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="language" class="tsd-anchor"></a>
+					<h3>language</h3>
+					<div class="tsd-signature tsd-kind-icon">language<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="APIClientBase.html">APIClientBase</a>.<a href="APIClientBase.html#language">language</a></p>
+						<ul>
+							<li>Defined in TypeScript/API/APIClientBase.ts:13</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Language of retrieve data</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="HistoricalCurrentConditions" class="tsd-anchor"></a>
+					<h3>Historical<wbr>Current<wbr>Conditions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Historical<wbr>Current<wbr>Conditions<span class="tsd-signature-symbol">(</span>hour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">24</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">6</span>, locationKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ICurrentConditionData.html" class="tsd-signature-type" data-tsd-kind="Interface">ICurrentConditionData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in TypeScript/API/CurrentConditionAPIClient.ts:61</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hour: <span class="tsd-signature-type">24</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">6</span></h5>
+								</li>
+								<li>
+									<h5>locationKey: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ICurrentConditionData.html" class="tsd-signature-type" data-tsd-kind="Interface">ICurrentConditionData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="currentCondition" class="tsd-anchor"></a>
+					<h3>current<wbr>Condition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">current<wbr>Condition<span class="tsd-signature-symbol">(</span>locationKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ICurrentConditionData.html" class="tsd-signature-type" data-tsd-kind="Interface">ICurrentConditionData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in TypeScript/API/CurrentConditionAPIClient.ts:35</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>locationKey: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ICurrentConditionData.html" class="tsd-signature-type" data-tsd-kind="Interface">ICurrentConditionData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="handleError" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosError</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="AccuWeatherAPIError.html" class="tsd-signature-type" data-tsd-kind="Class">AccuWeatherAPIError</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="APIClientBase.html">APIClientBase</a>.<a href="APIClientBase.html#handleError">handleError</a></p>
+								<ul>
+									<li>Defined in TypeScript/API/APIClientBase.ts:25</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>error: <span class="tsd-signature-type">AxiosError</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="AccuWeatherAPIError.html" class="tsd-signature-type" data-tsd-kind="Class">AccuWeatherAPIError</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="topCitiesCurrentCondition" class="tsd-anchor"></a>
+					<h3>top<wbr>Cities<wbr>Current<wbr>Condition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">top<wbr>Cities<wbr>Current<wbr>Condition<span class="tsd-signature-symbol">(</span>group<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">50</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">150</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ITopCitiesCurrentConditionData.html" class="tsd-signature-type" data-tsd-kind="Interface">ITopCitiesCurrentConditionData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in TypeScript/API/CurrentConditionAPIClient.ts:47</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>group: <span class="tsd-signature-type">50</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">150</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ITopCitiesCurrentConditionData.html" class="tsd-signature-type" data-tsd-kind="Interface">ITopCitiesCurrentConditionData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="APIClientBase.html" class="tsd-kind-icon">APIClient<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="AccuWeatherAPIError.html" class="tsd-kind-icon">Accu<wbr>WeatherAPIError</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="AccuWeatherClient.html" class="tsd-kind-icon">Accu<wbr>Weather<wbr>Client</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="CurrentConditionAPI.html" class="tsd-kind-icon">Current<wbr>ConditionAPI</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="CurrentConditionAPI.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="CurrentConditionAPI.html#apikey" class="tsd-kind-icon">apikey</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="CurrentConditionAPI.html#axiosInstance" class="tsd-kind-icon">axios<wbr>Instance</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="CurrentConditionAPI.html#detail" class="tsd-kind-icon">detail</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="CurrentConditionAPI.html#language" class="tsd-kind-icon">language</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="CurrentConditionAPI.html#HistoricalCurrentConditions" class="tsd-kind-icon">Historical<wbr>Current<wbr>Conditions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="CurrentConditionAPI.html#currentCondition" class="tsd-kind-icon">current<wbr>Condition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="CurrentConditionAPI.html#handleError" class="tsd-kind-icon">handle<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="CurrentConditionAPI.html#topCitiesCurrentCondition" class="tsd-kind-icon">top<wbr>Cities<wbr>Current<wbr>Condition</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="ForecastAPI.html" class="tsd-kind-icon">ForecastAPI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="LocationAPI.html" class="tsd-kind-icon">LocationAPI</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IAdminAreaData.html" class="tsd-kind-icon">IAdmin<wbr>Area<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IAutoCompleteSearchData.html" class="tsd-kind-icon">IAuto<wbr>Complete<wbr>Search<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IBaseCityData.html" class="tsd-kind-icon">IBase<wbr>City<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ICityData.html" class="tsd-kind-icon">ICity<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ICityDetails.html" class="tsd-kind-icon">ICity<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ICountryData.html" class="tsd-kind-icon">ICountry<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ICurrentConditionData.html" class="tsd-kind-icon">ICurrent<wbr>Condition<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IDailyForcastData.html" class="tsd-kind-icon">IDaily<wbr>Forcast<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IDailyForecastData.html" class="tsd-kind-icon">IDaily<wbr>Forecast<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IDayNightWeatherSummary.html" class="tsd-kind-icon">IDay<wbr>Night<wbr>Weather<wbr>Summary</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IHeadlineData.html" class="tsd-kind-icon">IHeadline<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IHourlyForecastData.html" class="tsd-kind-icon">IHourly<wbr>Forecast<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IInitOptions.html" class="tsd-kind-icon">IInit<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IMetricAndImperialData.html" class="tsd-kind-icon">IMetric<wbr>And<wbr>Imperial<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IRegionData.html" class="tsd-kind-icon">IRegion<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ITopCitiesCurrentConditionData.html" class="tsd-kind-icon">ITop<wbr>Cities<wbr>Current<wbr>Condition<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/IValueWithUnit.html" class="tsd-kind-icon">IValue<wbr>With<wbr>Unit</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
