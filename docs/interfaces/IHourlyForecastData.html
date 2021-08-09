@@ -68,9 +68,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Creating Docs.....
-							If you want information of these fields now, check
-						<a href="https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D" class="external">https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D</a></p>
+						<p>Fields description are from Accu Weather API playground:
+						<a href="https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/hourly/1hour/%7BlocationKey%7D" class="external">https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/hourly/1hour/%7BlocationKey%7D</a></p>
 					</div>
 				</div>
 			</section>
@@ -137,9 +136,15 @@
 					<div class="tsd-signature tsd-kind-icon">Ceiling<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:121</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:335</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<pre><code><span style="color: #001080">Celling</span><span style="color: #000000"> </span><span style="color: #001080">Data</span><span style="color: #000000">. (</span><span style="color: #001080">Will</span><span style="color: #000000"> </span><span style="color: #001080">be</span><span style="color: #000000"> </span><span style="color: #0000FF">undefined</span><span style="color: #000000"> </span><span style="color: #001080">if</span><span style="color: #000000"> </span><span style="color: #001080">ForecastAPI</span><span style="color: #000000">.</span><span style="color: #001080">details</span><span style="color: #000000"> </span><span style="color: #001080">is</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">)</span>
+</code></pre>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="CloudCover" class="tsd-anchor"></a>
@@ -147,9 +152,14 @@
 					<div class="tsd-signature tsd-kind-icon">Cloud<wbr>Cover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:133</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:383</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Number representing the percentage of the sky that is covered by clouds. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="DateTime" class="tsd-anchor"></a>
@@ -157,9 +167,14 @@
 					<div class="tsd-signature tsd-kind-icon">Date<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:89</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:219</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>DateTime of the forecast, displayed in ISO8601 format.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="DewPoint" class="tsd-anchor"></a>
@@ -167,9 +182,14 @@
 					<div class="tsd-signature tsd-kind-icon">Dew<wbr>Point<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:101</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:267</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Dew Point temperature. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="EpochDateTime" class="tsd-anchor"></a>
@@ -177,9 +197,14 @@
 					<div class="tsd-signature tsd-kind-icon">Epoch<wbr>Date<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:90</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:223</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>DateTime of the forecast, displayed as the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT).</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Evapotranspiration" class="tsd-anchor"></a>
@@ -187,9 +212,14 @@
 					<div class="tsd-signature tsd-kind-icon">Evapotranspiration<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:134</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:387</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Evapotranspiration Data (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="HasPrecipitation" class="tsd-anchor"></a>
@@ -197,9 +227,14 @@
 					<div class="tsd-signature tsd-kind-icon">Has<wbr>Precipitation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:93</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:235</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Boolean value that indicates the presence of any type of precipitation for a given night.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Ice" class="tsd-anchor"></a>
@@ -207,9 +242,14 @@
 					<div class="tsd-signature tsd-kind-icon">Ice<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:132</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:379</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Ice data. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="IceProbability" class="tsd-anchor"></a>
@@ -217,9 +257,14 @@
 					<div class="tsd-signature tsd-kind-icon">Ice<wbr>Probability<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:128</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:363</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Percent representing the probability of ice.  (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="IconPhrase" class="tsd-anchor"></a>
@@ -227,9 +272,14 @@
 					<div class="tsd-signature tsd-kind-icon">Icon<wbr>Phrase<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:92</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:231</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Phrase description of the forecast associated with the WeatherIcon.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="IndoorRelativeHumidity" class="tsd-anchor"></a>
@@ -237,9 +287,14 @@
 					<div class="tsd-signature tsd-kind-icon">Indoor<wbr>Relative<wbr>Humidity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:119</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:327</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indoor Relative Humidity (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="IsDaylight" class="tsd-anchor"></a>
@@ -247,9 +302,15 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Daylight<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:96</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:247</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<pre><code><span style="color: #001080">Specifies</span><span style="color: #000000"> </span><span style="color: #001080">whether</span><span style="color: #000000"> </span><span style="color: #001080">or</span><span style="color: #000000"> </span><span style="color: #001080">not</span><span style="color: #000000"> </span><span style="color: #001080">it</span><span style="color: #000000"> </span><span style="color: #001080">is</span><span style="color: #000000"> </span><span style="color: #795E26">daylight</span><span style="color: #000000"> (</span><span style="color: #0000FF">true</span><span style="color: #000000">=</span><span style="color: #001080">daylight</span><span style="color: #000000">, </span><span style="color: #0000FF">false</span><span style="color: #000000">=</span><span style="color: #001080">not</span><span style="color: #000000"> </span><span style="color: #001080">daylight</span><span style="color: #000000">).</span>
+</code></pre>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Link" class="tsd-anchor"></a>
@@ -257,9 +318,15 @@
 					<div class="tsd-signature tsd-kind-icon">Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:137</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:399</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<pre><code><span style="color: #001080">Link</span><span style="color: #000000"> </span><span style="color: #001080">to</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">hourly</span><span style="color: #000000"> </span><span style="color: #001080">forecast</span><span style="color: #000000"> </span><span style="color: #001080">for</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">requested</span><span style="color: #000000"> </span><span style="color: #001080">location</span><span style="color: #000000"> </span><span style="color: #001080">on</span><span style="color: #000000"> </span><span style="color: #795E26">AccuWeather</span><span style="color: #A31515">`s web site.</span>
+</code></pre>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="MobileLink" class="tsd-anchor"></a>
@@ -267,9 +334,14 @@
 					<div class="tsd-signature tsd-kind-icon">Mobile<wbr>Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:136</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:395</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Link to the hourly forecast for the requested location on AccuWeather`s mobile site.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="PrecipitationIntensity" class="tsd-anchor"></a>
@@ -277,9 +349,14 @@
 					<div class="tsd-signature tsd-kind-icon">Precipitation<wbr>Intensity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:95</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:243</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates if the precipitation strength is light, moderate, or heavy.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="PrecipitationProbability" class="tsd-anchor"></a>
@@ -287,9 +364,14 @@
 					<div class="tsd-signature tsd-kind-icon">Precipitation<wbr>Probability<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:124</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:347</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Percent representing the probability of precipitation.  (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="PrecipitationType" class="tsd-anchor"></a>
@@ -297,9 +379,15 @@
 					<div class="tsd-signature tsd-kind-icon">Precipitation<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:94</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:239</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<pre><code><span style="color: #001080">Indicates</span><span style="color: #000000"> </span><span style="color: #AF00DB">if</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">precipitation</span><span style="color: #000000"> </span><span style="color: #001080">strength</span><span style="color: #000000"> </span><span style="color: #001080">is</span><span style="color: #000000"> </span><span style="color: #001080">light</span><span style="color: #000000">, </span><span style="color: #001080">moderate</span><span style="color: #000000">, </span><span style="color: #001080">or</span><span style="color: #000000"> </span><span style="color: #001080">heavy</span><span style="color: #000000">.</span>
+</code></pre>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Rain" class="tsd-anchor"></a>
@@ -307,9 +395,14 @@
 					<div class="tsd-signature tsd-kind-icon">Rain<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:130</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:371</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Rain data. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="RainProbability" class="tsd-anchor"></a>
@@ -317,9 +410,14 @@
 					<div class="tsd-signature tsd-kind-icon">Rain<wbr>Probability<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:126</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:355</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Percent representing the probability of rain.  (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="RealFeelTemperature" class="tsd-anchor"></a>
@@ -327,9 +425,14 @@
 					<div class="tsd-signature tsd-kind-icon">Real<wbr>Feel<wbr>Temperature<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:98</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:255</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>RealFeelTemperature Data (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="RealFeelTemperatureShade" class="tsd-anchor"></a>
@@ -337,9 +440,14 @@
 					<div class="tsd-signature tsd-kind-icon">Real<wbr>Feel<wbr>Temperature<wbr>Shade<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:99</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:259</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>RealFeelTemperatureShade Data (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="RelativeHumidity" class="tsd-anchor"></a>
@@ -347,9 +455,14 @@
 					<div class="tsd-signature tsd-kind-icon">Relative<wbr>Humidity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:118</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:323</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Relative Humidity (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Snow" class="tsd-anchor"></a>
@@ -357,9 +470,14 @@
 					<div class="tsd-signature tsd-kind-icon">Snow<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:131</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:375</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Snow data. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="SnowProbability" class="tsd-anchor"></a>
@@ -367,9 +485,14 @@
 					<div class="tsd-signature tsd-kind-icon">Snow<wbr>Probability<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:127</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:359</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Percent representing the probability of snow.  (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="SolarIrradiance" class="tsd-anchor"></a>
@@ -377,9 +500,14 @@
 					<div class="tsd-signature tsd-kind-icon">Solar<wbr>Irradiance<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:135</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:391</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>SolarIrradiance Data (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Temperature" class="tsd-anchor"></a>
@@ -387,9 +515,14 @@
 					<div class="tsd-signature tsd-kind-icon">Temperature<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:97</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:251</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Temperature Data</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="ThunderstormProbability" class="tsd-anchor"></a>
@@ -397,9 +530,14 @@
 					<div class="tsd-signature tsd-kind-icon">Thunderstorm<wbr>Probability<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:125</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:351</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Percent representing the probability of thunderstorm.  (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="TotalLiquid" class="tsd-anchor"></a>
@@ -407,9 +545,14 @@
 					<div class="tsd-signature tsd-kind-icon">Total<wbr>Liquid<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:129</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:367</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>TotalLiquid data. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="UVIndex" class="tsd-anchor"></a>
@@ -417,9 +560,15 @@
 					<div class="tsd-signature tsd-kind-icon">UVIndex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:122</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:339</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<pre><code><span style="color: #001080">Measure</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">strength</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">ultraviolet</span><span style="color: #000000"> </span><span style="color: #001080">radiation</span><span style="color: #000000"> </span><span style="color: #001080">from</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">sun</span><span style="color: #000000">. (</span><span style="color: #001080">Will</span><span style="color: #000000"> </span><span style="color: #001080">be</span><span style="color: #000000"> </span><span style="color: #0000FF">undefined</span><span style="color: #000000"> </span><span style="color: #001080">if</span><span style="color: #000000"> </span><span style="color: #001080">ForecastAPI</span><span style="color: #000000">.</span><span style="color: #001080">details</span><span style="color: #000000"> </span><span style="color: #001080">is</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">)</span>
+</code></pre>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="UVIndexText" class="tsd-anchor"></a>
@@ -427,9 +576,14 @@
 					<div class="tsd-signature tsd-kind-icon">UVIndex<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:123</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:343</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Text associated with the UVIndex. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Visibility" class="tsd-anchor"></a>
@@ -437,9 +591,15 @@
 					<div class="tsd-signature tsd-kind-icon">Visibility<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:120</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:331</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<pre><code><span style="color: #001080">Visibility</span><span style="color: #000000"> </span><span style="color: #001080">Data</span><span style="color: #000000">. (</span><span style="color: #001080">Will</span><span style="color: #000000"> </span><span style="color: #001080">be</span><span style="color: #000000"> </span><span style="color: #0000FF">undefined</span><span style="color: #000000"> </span><span style="color: #001080">if</span><span style="color: #000000"> </span><span style="color: #001080">ForecastAPI</span><span style="color: #000000">.</span><span style="color: #001080">details</span><span style="color: #000000"> </span><span style="color: #001080">is</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">)</span>
+</code></pre>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="WeatherIcon" class="tsd-anchor"></a>
@@ -447,9 +607,15 @@
 					<div class="tsd-signature tsd-kind-icon">Weather<wbr>Icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:91</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:227</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<pre><code><span style="color: #001080">Numeric</span><span style="color: #000000"> </span><span style="color: #001080">value</span><span style="color: #000000"> </span><span style="color: #001080">representing</span><span style="color: #000000"> </span><span style="color: #001080">an</span><span style="color: #000000"> </span><span style="color: #001080">image</span><span style="color: #000000"> </span><span style="color: #001080">that</span><span style="color: #000000"> </span><span style="color: #001080">displays</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">current</span><span style="color: #000000"> </span><span style="color: #001080">condition</span><span style="color: #000000"> </span><span style="color: #001080">described</span><span style="color: #000000"> </span><span style="color: #001080">by</span><span style="color: #000000"> </span><span style="color: #001080">WeatherText</span><span style="color: #000000">.</span>
+</code></pre>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="WetBulbTemperature" class="tsd-anchor"></a>
@@ -457,9 +623,14 @@
 					<div class="tsd-signature tsd-kind-icon">Wet<wbr>Bulb<wbr>Temperature<span class="tsd-signature-symbol">:</span> <a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:100</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:263</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The temperature to which air may be cooled by evaporating water into it at constant pressure until it reaches saturation. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="Wind" class="tsd-anchor"></a>
@@ -467,28 +638,58 @@
 					<div class="tsd-signature tsd-kind-icon">Wind<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Degrees<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>English<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Localized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>Speed<span class="tsd-signature-symbol">: </span><a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:102</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:271</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Wind data. (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>Direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Degrees<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>English<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Localized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Wind direction Data</p>
+									</div>
+								</div>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
 										<h5>Degrees<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Wind direction in azimuth degrees</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>English<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Direction abbreviation in English.</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>Localized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Direction abbreviation in the specified language.</p>
+											</div>
+										</div>
 									</li>
 								</ul>
 							</li>
 							<li class="tsd-parameter">
 								<h5>Speed<span class="tsd-signature-symbol">: </span><a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Wind speed</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -499,28 +700,58 @@
 					<div class="tsd-signature tsd-kind-icon">Wind<wbr>Gust<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Degrees<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>English<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Localized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>Speed<span class="tsd-signature-symbol">: </span><a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:110</li>
+							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:297</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>WindGust Data (Will be undefined if ForecastAPI.details is false)</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>Direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Degrees<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>English<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Localized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>WindGust direction Data</p>
+									</div>
+								</div>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
 										<h5>Degrees<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>WindGust direction in azimuth degrees</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>English<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Direction abbreviation in English.</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>Localized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Direction abbreviation in the specified language.</p>
+											</div>
+										</div>
 									</li>
 								</ul>
 							</li>
 							<li class="tsd-parameter">
 								<h5>Speed<span class="tsd-signature-symbol">: </span><a href="IValueWithUnit.html" class="tsd-signature-type" data-tsd-kind="Interface">IValueWithUnit</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>WindGust speed data</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
