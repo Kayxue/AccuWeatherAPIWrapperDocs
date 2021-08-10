@@ -58,6 +58,132 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
+				<a href="#accu-weather-api-wrapper" id="accu-weather-api-wrapper" style="color: inherit; text-decoration: none;">
+					<h1>Accu Weather API Wrapper</h1>
+				</a>
+				<p><a href="https://www.npmjs.com/package/accu-weather-api-wrapper"><img src="http://img.shields.io/npm/v/accu-weather-api-wrapper/latest?style=for-the-badge&logo=npm" alt="NPM version"></a>
+					<a href="https://www.npmjs.com/package/accu-weather-api-wrapper"><img src="https://img.shields.io/bundlephobia/min/@latest/accu-weather-api-wrapper?label=Bundle-size&style=for-the-badge&logo=npm" alt="Package Size"></a>
+					<a href="https://www.npmjs.com/package/accu-weather-api-wrapper"><img src="https://img.shields.io/npm/dm/accu-weather-api-wrapper?style=for-the-badge&logo=npm" alt="Downloads"></a>
+					<a href="https://github.com/Kayxue/AccuWeatherAPIWrapper"><img src="http://img.shields.io/github/package-json/v/Kayxue/AccuWeatherAPIWrapper?style=for-the-badge&logo=git" alt="Github Package Version"></a>
+				<a href="https://www.npmjs.com/package/accu-weather-api-wrapper"><img src="http://img.shields.io/npm/types/accu-weather-api-wrapper?style=for-the-badge&logo=typescript" alt="Type Definitions"></a></p>
+				<p>Wrapper of Accu Weather API</p>
+				<a href="#now-avalivable-apis-of-this-package" id="now-avalivable-apis-of-this-package" style="color: inherit; text-decoration: none;">
+					<h2>Now avalivable APIs of this package:</h2>
+				</a>
+				<ul>
+					<li>  [x] Location API</li>
+					<li>  [x] Forecast API</li>
+					<li>  [x] Current Conditions API</li>
+					<li>  [ ] Indices API</li>
+					<li>  [ ] Weather Alarms API</li>
+					<li>  [ ] Alerts API</li>
+					<li>  [ ] Imagery API</li>
+					<li>  [ ] Tropical API</li>
+					<li>  [ ] Translations API</li>
+				</ul>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<pre><code class="language-sh"><span style="color: #000000">npm install accu-weather-api-wrapper</span>
+</code></pre>
+				<a href="#basic-usages" id="basic-usages" style="color: inherit; text-decoration: none;">
+					<h2>Basic Usages</h2>
+				</a>
+				<a href="#1-using-client-which-includes-all-api-clients" id="1-using-client-which-includes-all-api-clients" style="color: inherit; text-decoration: none;">
+					<h3>1. Using client which includes all api clients:</h3>
+				</a>
+				<a href="#typescript" id="typescript" style="color: inherit; text-decoration: none;">
+					<h4>TypeScript:</h4>
+				</a>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">AccuWeatherClient</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;accu-weather-wrapper&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">client</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">AccuWeatherClient</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">apikey:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;key&quot;</span><span style="color: #000000">,     </span><span style="color: #008000">//Required. Accu Weather API key.</span>
+<span style="color: #000000">    </span><span style="color: #001080">language:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;en-us&quot;</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. Language of retrieve data. Default: &quot;en-us&quot;</span>
+<span style="color: #000000">    </span><span style="color: #001080">detail:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,      </span><span style="color: #008000">//Optional. Whether return full object when searching. Default: false</span>
+<span style="color: #000000">    </span><span style="color: #001080">offset:</span><span style="color: #000000"> </span><span style="color: #098658">100</span><span style="color: #000000">,       </span><span style="color: #008000">//Optional. The limit that determines the first resource to be returned. Default: 100</span>
+<span style="color: #000000">    </span><span style="color: #001080">metric:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">;      </span><span style="color: #008000">//Optional. Whether or not to return metric values. Default: false</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #008000">//Get city data</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">location</span><span style="color: #000000">.</span><span style="color: #795E26">citySearch</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Taipei&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+
+<span style="color: #008000">//Get 1 day forecast data (&quot;4-315078_1_AL&quot; is location key)</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">forecast</span><span style="color: #000000">.</span><span style="color: #795E26">getDailyForecast</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;4-315078_1_AL&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+
+<span style="color: #008000">//Get current conditions data</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">currentConditions</span><span style="color: #000000">.</span><span style="color: #795E26">currentCondition</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;4-315078_1_AL&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+</code></pre>
+				<a href="#javascript" id="javascript" style="color: inherit; text-decoration: none;">
+					<h4>JavaScript</h4>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">AccuWeatherClient</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;accu-weather-wrapper&quot;</span><span style="color: #000000">).</span><span style="color: #001080">default</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">client</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">AccuWeatherClient</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">apikey:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;key&quot;</span><span style="color: #000000">,     </span><span style="color: #008000">//Required. Accu Weather API key.</span>
+<span style="color: #000000">    </span><span style="color: #001080">language:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;en-us&quot;</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. Language of retrieve data. Default: &quot;en-us&quot;</span>
+<span style="color: #000000">    </span><span style="color: #001080">detail:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,      </span><span style="color: #008000">//Optional. Whether return full object when searching. Default: false</span>
+<span style="color: #000000">    </span><span style="color: #001080">offset:</span><span style="color: #000000"> </span><span style="color: #098658">100</span><span style="color: #000000">,       </span><span style="color: #008000">//Optional. The limit that determines the first resource to be returned. Default: 100</span>
+<span style="color: #000000">    </span><span style="color: #001080">metric:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">;      </span><span style="color: #008000">//Optional. Whether or not to return metric values. Default: false</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #008000">//Get city data</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">location</span><span style="color: #000000">.</span><span style="color: #795E26">citySearch</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Taipei&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+
+<span style="color: #008000">//Get 1 day forecast data (&quot;4-315078_1_AL&quot; is location key)</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">forecast</span><span style="color: #000000">.</span><span style="color: #795E26">getDailyForecast</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;4-315078_1_AL&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+
+<span style="color: #008000">//Get current conditions data</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">currentConditions</span><span style="color: #000000">.</span><span style="color: #795E26">currentCondition</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;4-315078_1_AL&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+</code></pre>
+				<a href="#2-using-single-api-client" id="2-using-single-api-client" style="color: inherit; text-decoration: none;">
+					<h3>2. Using single API Client:</h3>
+				</a>
+				<a href="#typescript-1" id="typescript-1" style="color: inherit; text-decoration: none;">
+					<h4>TypeScript:</h4>
+				</a>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LocationAPI</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;accu-weather-wrapper&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">client</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">LocationAPI</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">apikey:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;key&quot;</span><span style="color: #000000">, </span><span style="color: #008000">//Required. Accu Weather API key.</span>
+<span style="color: #000000">    </span><span style="color: #001080">language:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;en-us&quot;</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. Language of retrieve data. Default: &quot;en-us&quot;</span>
+<span style="color: #000000">    </span><span style="color: #001080">detail:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. Whether return full object when searching. Default: false</span>
+<span style="color: #000000">    </span><span style="color: #001080">offset:</span><span style="color: #000000"> </span><span style="color: #098658">100</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. The limit that determines the first resource to be returned. Default: 100</span>
+<span style="color: #000000">});</span>
+
+<span style="color: #008000">//Get city data</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">citySearch</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Taipei&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">);</span>
+</code></pre>
+				<a href="#javascript-1" id="javascript-1" style="color: inherit; text-decoration: none;">
+					<h4>JavaScript</h4>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">LocationAPI</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;accu-weather-wrapper&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">client</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">LocationAPI</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">apikey:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;key&quot;</span><span style="color: #000000">, </span><span style="color: #008000">//Required. Accu Weather API key.</span>
+<span style="color: #000000">    </span><span style="color: #001080">language:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;en-us&quot;</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. Language of retrieve data. Default: &quot;en-us&quot;</span>
+<span style="color: #000000">    </span><span style="color: #001080">detail:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. Whether return full object when searching. Default: false</span>
+<span style="color: #000000">    </span><span style="color: #001080">offset:</span><span style="color: #000000"> </span><span style="color: #098658">100</span><span style="color: #000000">, </span><span style="color: #008000">//Optional. The limit that determines the first resource to be returned. Default: 100</span>
+<span style="color: #000000">});</span>
+
+<span style="color: #008000">//Get city data</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">citySearch</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Taipei&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">);</span>
+</code></pre>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h2>Documentation</h2>
+				</a>
+				<p><a href="https://accuweatherapiwrapperdocs.pages.dev">https://accuweatherapiwrapperdocs.pages.dev</a></p>
+				<a href="#api-provider" id="api-provider" style="color: inherit; text-decoration: none;">
+					<h2>API Provider</h2>
+				</a>
+				<p>Accu Weather Company: <a href="https://developer.accuweather.com/apis">https://developer.accuweather.com/apis</a></p>
+				<a href="#issue-amp-support" id="issue-amp-support" style="color: inherit; text-decoration: none;">
+					<h2>Issue &amp; Support</h2>
+				</a>
+				<p>If you have any question to ask or bugs to report, you can open issue on github:
+				<a href="https://github.com/Kayxue/AccuWeatherAPIWrapper">https://github.com/Kayxue/AccuWeatherAPIWrapper</a></p>
+				<p>Or join my discord server to get help:
+				(Not finished yet)</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
