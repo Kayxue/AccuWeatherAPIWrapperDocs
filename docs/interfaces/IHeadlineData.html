@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for accu-weather-api-wrapper">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
@@ -64,184 +65,6 @@
 </header>
 <div class="container container-main">
 	<div class="row">
-		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Fields description are from Accu Weather API playground:
-						<a href="https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D" class="external">https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D</a></p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">IHeadlineData</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Category" class="tsd-kind-icon">Category</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EffectiveDate" class="tsd-kind-icon">Effective<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EffectiveEpochDate" class="tsd-kind-icon">Effective<wbr>Epoch<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EndDate" class="tsd-kind-icon">End<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EndEpochDate" class="tsd-kind-icon">End<wbr>Epoch<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Link" class="tsd-kind-icon">Link</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#MobileLink" class="tsd-kind-icon">Mobile<wbr>Link</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Severity" class="tsd-kind-icon">Severity</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Text" class="tsd-kind-icon">Text</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="Category" class="tsd-anchor"></a>
-					<h3>Category</h3>
-					<div class="tsd-signature tsd-kind-icon">Category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:43</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Category of the headline.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="EffectiveDate" class="tsd-anchor"></a>
-					<h3>Effective<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">Effective<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:26</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>DateTime, displayed in ISO8601 format</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="EffectiveEpochDate" class="tsd-anchor"></a>
-					<h3>Effective<wbr>Epoch<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">Effective<wbr>Epoch<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:30</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Effective Date of the headline, displayed as the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="EndDate" class="tsd-anchor"></a>
-					<h3>End<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">End<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:47</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>DateTime, displayed in ISO8601 format</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="EndEpochDate" class="tsd-anchor"></a>
-					<h3>End<wbr>Epoch<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">End<wbr>Epoch<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:51</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>End Date of the headline, displayed as the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="Link" class="tsd-anchor"></a>
-					<h3>Link</h3>
-					<div class="tsd-signature tsd-kind-icon">Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:59</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Link to the extended forecast for the requested location on AccuWeather`s web site.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="MobileLink" class="tsd-anchor"></a>
-					<h3>Mobile<wbr>Link</h3>
-					<div class="tsd-signature tsd-kind-icon">Mobile<wbr>Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:55</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Link to the extended forecast for the requested location on AccuWeather`s mobile site.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="Severity" class="tsd-anchor"></a>
-					<h3>Severity</h3>
-					<div class="tsd-signature tsd-kind-icon">Severity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:35</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Severity of the headline, displayed as an integer. The lower the number, the greater the severity.
-							0 = Unknown 1 = Significant 2 = Major 3 = Moderate 4 = Minor 5 = Minimal 6 = Insignificant 7 = Informational</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="Text" class="tsd-anchor"></a>
-					<h3>Text</h3>
-					<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in TypeScript/Interfaces/ForecastAPIData.ts:39</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Text of the headline, which represents the most significant weather event over the next 5 days.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
@@ -356,6 +179,184 @@
 					</li>
 				</ul>
 			</nav>
+		</div>
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Fields description are from Accu Weather API playground:
+						<a href="https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D" class="external">https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D</a></p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IHeadlineData</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Category" class="tsd-kind-icon">Category</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EffectiveDate" class="tsd-kind-icon">Effective<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EffectiveEpochDate" class="tsd-kind-icon">Effective<wbr>Epoch<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EndDate" class="tsd-kind-icon">End<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#EndEpochDate" class="tsd-kind-icon">End<wbr>Epoch<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Link" class="tsd-kind-icon">Link</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#MobileLink" class="tsd-kind-icon">Mobile<wbr>Link</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Severity" class="tsd-kind-icon">Severity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IHeadlineData.html#Text" class="tsd-kind-icon">Text</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="Category" class="tsd-anchor"></a>
+					<h3>Category</h3>
+					<div class="tsd-signature tsd-kind-icon">Category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:43</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Category of the headline.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="EffectiveDate" class="tsd-anchor"></a>
+					<h3>Effective<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">Effective<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>DateTime, displayed in ISO8601 format</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="EffectiveEpochDate" class="tsd-anchor"></a>
+					<h3>Effective<wbr>Epoch<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">Effective<wbr>Epoch<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:30</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Effective Date of the headline, displayed as the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="EndDate" class="tsd-anchor"></a>
+					<h3>End<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">End<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:47</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>DateTime, displayed in ISO8601 format</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="EndEpochDate" class="tsd-anchor"></a>
+					<h3>End<wbr>Epoch<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">End<wbr>Epoch<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>End Date of the headline, displayed as the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="Link" class="tsd-anchor"></a>
+					<h3>Link</h3>
+					<div class="tsd-signature tsd-kind-icon">Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Link to the extended forecast for the requested location on AccuWeather`s web site.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="MobileLink" class="tsd-anchor"></a>
+					<h3>Mobile<wbr>Link</h3>
+					<div class="tsd-signature tsd-kind-icon">Mobile<wbr>Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:55</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Link to the extended forecast for the requested location on AccuWeather`s mobile site.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="Severity" class="tsd-anchor"></a>
+					<h3>Severity</h3>
+					<div class="tsd-signature tsd-kind-icon">Severity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:35</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Severity of the headline, displayed as an integer. The lower the number, the greater the severity.
+							0 = Unknown 1 = Significant 2 = Major 3 = Moderate 4 = Minor 5 = Minimal 6 = Insignificant 7 = Informational</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="Text" class="tsd-anchor"></a>
+					<h3>Text</h3>
+					<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Interfaces/ForecastAPIData.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Text of the headline, which represents the most significant weather event over the next 5 days.</p>
+						</div>
+					</div>
+				</section>
+			</section>
 		</div>
 	</div>
 </div>
